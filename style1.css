@@ -1,0 +1,529 @@
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 3%;
+    margin-top: -22px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 4%;
+}
+
+.next {
+    right: 29%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 10px 12px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    background-color: black;
+    border-radius: 30px;
+
+}
+
+.numbertext {
+    color: black;
+    font-size: 15px;
+    padding: 7px 8px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    background-color: rgba(130, 78, 234, 0.9);
+    color: #f7f8f9;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, .25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    text-decoration: none;
+    font-size: .75em;
+}
+
+#back-to-top:hover {
+    background-color: black;
+    padding: 1em 3em;
+    color: white;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
+
+body {
+    font-family: ubuntu;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.homepage {
+    background-color: black;
+    width: 100%;
+    height: 760px;
+}
+
+.logo {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+
+}
+
+nav ul li {
+    background-color: none;
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+nav li a {
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    font-style: bold;
+    text-transform: capitalize;
+
+}
+
+nav li a:hover {
+
+    color: rgb(89, 10, 173);
+    transition: .4s;
+
+}
+
+.noticealert {
+    text-align: center;
+    ;
+    padding: 20px;
+    position: absolute;
+    right: 3%;
+    top: 150px;
+    height: 500px;
+    width: 300px;
+    color: white;
+    background-color: #8336f5;
+    border-radius: 60px;
+}
+
+input[type=email] {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #8336f5;
+    width: 400px;
+}
+
+input[type=submit] {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #8336f5;
+    width: 100px;
+    color: white;
+}
+
+input[type=reset] {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #8336f5;
+    width: 100px;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+
+}
+
+input[type=reset]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+
+}
+
+.photo img {
+    width: 800px;
+    height: 500px;
+    margin: 50px;
+    border: 6px solid #8336f5;
+    border-radius: 60px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.706);
+}
+
+.section1 {
+    margin: 0px;
+    background-color: #8336f5;
+    height: 750px;
+    margin-bottom: 0px;
+}
+
+.section1 h1 {
+    margin: 0px;
+    padding: 60px 0px 50px 0px;
+    color: white;
+    size: 70px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px black;
+
+}
+
+.aboutdtu img {
+    margin-left: 80px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 950px;
+    border-radius: 500px;
+    border: 8px solid white;
+}
+
+.section1content {
+    color: white;
+    position: absolute;
+    left: 40%;
+    right: 5%;
+    margin-top: 10px;
+    font-size: large;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-shadow: 3px 3px black;
+
+}
+
+.aboutmebtn {
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 140px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.aboutmebtn a {
+
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.aboutmebtn:hover,
+.aboutmebtn a:hover {
+    color: white;
+    background-color: black;
+    transition: .4s;
+
+}
+
+.section2 {
+    margin: 0px;
+    padding: 0px;
+    height: 800px;
+    background-color: black;
+
+
+}
+
+.section2content {
+    grid-template-areas: 'dtuportal dtuportal iccr iccr dasa dasa';
+    gap: 10px;
+    display: grid;
+
+}
+
+.dtuportal {
+    grid-area: dtuportal;
+}
+
+.iccr {
+    grid-area: iccr;
+}
+
+.dasa {
+    grid-area: dasa;
+}
+
+.dtuportal,
+.iccr,
+.dasa {
+    padding: 0px;
+    margin: 20px;
+    background-color: white;
+    height: 500px;
+    border: 3px solid #8336f5;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 10px 10px #8336f5;
+}
+
+.section2 h1 {
+    color: white;
+    text-align: center;
+    size: 70px;
+    margin: 0px;
+    padding: 60px;
+}
+
+.section2content h3 {
+    color: black;
+    width: 100%;
+    text-align: center;
+
+}
+
+.dtu img,
+.ccrc img,
+.kdm img {
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    align-items: center;
+    margin: 20px 70px 10px 70px;
+}
+
+.dtuportal a {
+    position: absolute;
+    padding: 20px;
+    background-color: #8336f5;
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    top: 2120px;
+    left: 150px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: .6s;
+}
+
+.iccr a {
+    position: absolute;
+    padding: 20px;
+    background-color: #8336f5;
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    top: 2120px;
+    left: 640px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: .6s;
+}
+
+.dasa a {
+    position: absolute;
+    padding: 20px;
+    background-color: #8336f5;
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    top: 2120px;
+    left: 1120px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: .6s;
+}
+
+.section2content a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition-timing-function: ease;
+}
+
+.section3 {
+    height: 770px;
+    margin: 0px;
+    background-color: #8336f5;
+    padding: 0px;
+}
+
+.copyright {
+    position: absolute;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 3px black;
+    size: 20px;
+    left: 40%;
+    margin: 0px;
+    top: 3120px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.address {
+
+    position: absolute;
+    top: 2920px;
+    right: 2%;
+    color: white;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+input[type=text],
+input[type=email],
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.form {
+    border: 2px solid white;
+    background-color: none;
+    padding: 20px;
+    position: absolute;
+    margin-top: 30px;
+    left: 5%;
+    width: 400px;
+    color: white;
+    font-size: medium;
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
+
+}
+
+.address a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.address a:hover {
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    font-family: ubuntu;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    padding: 10px;
+    width: 150px;
+    color: white;
+
+}
+
+input[type=submit]:hover {
+    background-color: rgba(92, 192, 4, 0.972);
+    border: 2px solid black;
+}
+
+input[type=reset] {
+    background-color: transparent;
+    padding: 10px;
+    width: 150px;
+    color: white;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(255, 0, 0);
+    border: 2px solid black;
+}
+
+.map {
+    position: absolute;
+    top: 2400px;
+    right: 4%;
+}
+
+.alert {
+    background-color: rgb(2, 0, 0);
+    height: 450px;
+    border-radius: 60px;
+    padding: 20px 2px 20px 0px;
+    font-family: Helvetica;
+}
+
+.noticealert a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.noticealert a:hover {
+    text-decoration: underline;
+}
+
+li {
+    color: white;
+}
+
+.alert span a {
+    font-size: smaller;
+    font-weight: bolder;
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}

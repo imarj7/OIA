@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<head>
+    <title>About OIA</title>
+    <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/DTU%2C_Delhi_official_logo.png/200px-DTU%2C_Delhi_official_logo.png">
+    <link rel="stylesheet" href=style1.css" type="text/css">
+</head>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/nekophilia');
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Ubuntu&display=swap');
+
+        body {
+            font-family: ubuntu;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .homepage {
+            background-color: black;
+            width: 100%;
+            height: 150px;
+        }
+
+        .logo {
+            color: white;
+            letter-spacing: 1px;
+            font-style: bold;
+            font-size: 26px;
+            cursor: pointer;
+        }
+        .section1{
+            border: 5px solid white;
+            border-radius: 60px;
+            background-color:#8336f5;
+            margin-top:0px;
+            height:1200px;
+        }
+        .section1 h1{
+            color:white;
+            padding:40px;
+            text-shadow: 5px 5px black;
+            margin:0px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-left: 3%;
+            padding-right: 3%;
+            align-items: center;
+        }
+
+        nav ul li {
+            background-color: none;
+            list-style-type: none;
+            overflow: hidden;
+            display: inline-block;
+
+        }
+
+        nav li a {
+            padding: 30px;
+            text-decoration: none;
+            color: white;
+            font-style: bold;
+            text-transform: capitalize;
+
+        }
+
+        nav li a:hover {
+
+            color: rgb(89, 10, 173);
+            transition: .4s;
+
+        }
+
+
+        input[type=email] {
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid #8336f5;
+            width: 400px;
+        }
+
+        input[type=submit] {
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: #8336f5;
+            width: 100px;
+            color: white;
+        }
+
+        input[type=reset] {
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: #8336f5;
+            width: 100px;
+            color: white;
+        }
+
+        input[type=submit]:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            transition: 0.9s;
+
+        }
+
+        input[type=reset]:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            transition: 0.9s;
+
+        }
+
+        
+
+        .section2 {
+            height: 770px;
+            margin: 0px;
+            background-color: black;
+            padding: 0px;
+        }
+
+        .copyright {
+            position: absolute;
+            color: black;
+            font-weight: bolder;
+            text-shadow: 3px black;
+            size: 20px;
+            left: 40%;
+            margin: 0px;
+            top: 2140px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .address {
+
+            position: absolute;
+            top: 1900px;
+            right: 2%;
+            color: white;
+            font-size: medium;
+            letter-spacing: 1px;
+        }
+
+        input[type=text],
+        input[type=email],
+        select {
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .form {
+            border: 2px solid white;
+            background-color: none;
+            padding: 20px;
+            position: absolute;
+            margin-top: 30px;
+            left: 5%;
+            width: 400px;
+            color: white;
+            font-size: medium;
+            border-radius: 20px;
+            box-shadow: 10px 10px white;
+
+        }
+
+        .address a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .address a:hover {
+            text-decoration: underline;
+            transition: 0.7s;
+        }
+
+        textarea {
+            height: 200px;
+            width: 100%;
+            font-family: ubuntu;
+            border-radius: 10px;
+        }
+
+        input[type=submit] {
+            background-color: transparent;
+            padding: 10px;
+            width: 150px;
+            color: white;
+
+        }
+
+        input[type=submit]:hover {
+            background-color: rgba(92, 192, 4, 0.972);
+            border: 2px solid black;
+        }
+
+        input[type=reset] {
+            background-color: transparent;
+            padding: 10px;
+            width: 150px;
+            color: white;
+        }
+
+        input[type=reset]:hover {
+            background-color: rgb(255, 0, 0);
+            border: 2px solid black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+            "item1 item1 item2 item2 item7 item7"
+            "item4 item4 item5 item5 item6 item6"
+            "item3 item3 item3 item3 item3 item3";
+
+        }
+
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .item3 {
+            grid-area: item3;
+        }
+
+        .item4 {
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+
+        .item6 {
+            grid-area: item6;
+        }
+
+        
+
+        .item7 {
+            grid-area: item7;
+        }
+
+        .map {
+            position: absolute;
+            top: 1400px;
+            right: 4%;
+        }
+
+        .item1,
+        .item2,
+        .item4,
+        .item5,
+        .item6,
+        .item7 {
+            color: white;
+            text-shadow: 3px 3px black;
+            font-size: large;
+            text-align: center;
+            padding:20px 0px 20px 80px;
+            
+        }
+        .item3{
+            color: white;
+            text-shadow: 3px 3px black;
+            font-size: large;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .item1 a,
+        .item2 a,
+        .item3 a,
+        .item4 a,
+        .item5 a,
+        .item6 a,
+        .item7 a {
+            color:white;
+            font-size: smaller;
+            text-decoration: none;
+           
+        }
+        .item1 a:hover,
+        .item2 a:hover,
+        .item3 a:hover,
+        .item4 a:hover,
+        .item5 a:hover,
+        .item6 a:hover,
+        .item7 a:hover {
+            color:white;
+            font-size: large;
+            transition: 0.9s;
+
+        }
+
+        .item1 img,
+        .item2 img,
+        .item3 img,
+        .item4 img,
+        .item5 img,
+        .item6 img,
+        .item7 img {
+            height: 200px;
+            width: 200px;
+            border-radius: 200px;
+            box-shadow: 5px 5px white;
+            border:3px solid white;
+            transition: 1.0s;
+            transition-timing-function: ease;
+        }
+        .item1 img:hover,
+        .item2 img:hover,
+        .item3 img:hover,
+        .item4 img:hover,
+        .item5 img:hover,
+        .item6 img:hover,
+        .item7 img:hover {
+            height: 240px;
+            width: 240px;
+           
+            
+        }
+    </style>
+
+<body>
+    <div class="homepage">
+        <nav>
+            <div class="logo"> The Office of<span style="color:#8336f5; font-style:bold;"> International Affairs</span>
+                <div style="font-size:15px ;">Delhi Technological University</div>
+</div>
+            <ul>
+                <li> <a href="main.html">Home</a></li>
+                <li> <a href="aboutoia.html">About OIA</a></li>
+                <li> <a href="#almamatters">Admission</a></li>
+                <li> <a href="downloads.html">Downloads</a></li>
+                <li> <a href="link4">Courses Offered</a></li>
+                <li> <a href="#contactme">Contact Us</a></li>
+            </ul>
+        </nav></div>
+        <div class="section1">
+            <h1 style="text-align:center;">Team OIA</h1>
+            <div class="container">
+                <div class="item1"><img
+                        src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/33/99/3399a27b-8c53-4e56-b1e8-a7759c4f79ca/dr_roli_3.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                    <br><br>
+                    Prof. (Dr.) Roli Purwar<br>Associate Dean
+                    <br><a href="mailto:roli.purwar@dtu.ac.in"  target="blank";>roli.purwar@dtu.ac.in</a>
+
+                </div>
+                <div class="item2">
+                    <img
+                        src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/96/4b/964b0a98-570a-4ced-924b-61cebb96eba5/dr_raju_sarkar_geotechnical_engg.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                    <br><br>
+                    Prof. (Dr.) Raju Sarkar<br>
+                    Coordinator MoU & Visitation
+                    <br><a href="mailto:rajusarkar@dce.ac.in"  target="blank";>rajusarkar@dce.ac.in</a></div>
+                    <div class="item3">
+                        <img
+                            src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/d4/4b/d44b414d-2856-4db0-ba72-33dcc3189640/dr_rahul_katarya_pic.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                        <br><br>
+                        Prof. (Dr.) Rahul Katarya<br>
+                        Coordinator, International Partnership & Visitation, IT and Database
+                        <br><a href="mailto:rahulkatarya@dtu.ac.in"  target="blank";>rahulkatarya@dtu.ac.in</a>
+                    </div>
+                    <div class="item4">
+                        <img
+                            src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/ec/63/ec6331a9-b6dc-497c-aef8-f794e5718af9/dr_m_jayasimhadri.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                        <br><br> Dr. M Jayasimhadri<br>
+                        Coordinator, Mobility
+                        <br><a href="mailto:jayasimha@dtu.ac.in"  target="blank";>jayasimha@dtu.ac.in</a>
+                    </div>
+                    <div class="item5">
+                        <img
+                            src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/49/e1/49e19f9f-cfaa-4ae7-922d-e43a37f7c845/yashna.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                        <br> <br>Dr. Yashna Sharma<br>
+                        Coordinator - Promotion & Branding
+                        <br><a href="mailto:yashnasharma@dtu.ac.in"  target="blank";>yashnasharma@dtu.ac.in</a>
+                    </div>
+                    <div class="item6">
+                        <img
+                            src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/4e/f0/4ef07669-64e8-4e1a-a1d3-c1a6a6ca8462/dr_sonam_thukral.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                        <br><br> Dr. Sonal Thukral<br>
+                      Coordinator - Scholarship & Internship
+                      <br><a href="mailto:sonalthukral@dtu.ac.in"  target="blank";>sonalthukral@dtu.ac.in</a>
+                    </div>
+                    <div class="item7">
+                        <img
+                            src="https://intaffairs.dtu.ac.in/media/filer_public_thumbnails/filer_public/6a/11/6a11d67d-e87a-41e1-a7b7-c5b71946ec2f/dr_vivek_.jpg__413x550_q85_crop_subsampling-2_upscale.jpg">
+                        <br> <br>Dr. Vivek Tripathi<br>
+                        Assistant Registrar
+                        <br><a href="mailto:genevivek1979@gmail.com"  target="blank";>genevivek1979@gmail.com</a>
+                    </div>
+</div>
+        </div>
+        <div class="section2" id="contactme">
+            <div class="message">
+                <div class="form">
+                    <h2 style="text-align:center; color:white;margin:0px;padding:30px;">Contact Us</h1>
+                        <form>
+                            <label for="fname">Full Name: </label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter your full name.">
+                            <label for="scheme">Enquiry for:</label>
+                            <select id="scheme" name="scheme">
+                                <option value="ICCR scheme">ICCR scholarship Scheme</option>
+                                <option value="DTU portal">DTU portal</option>
+                                <option value="DASA scheme">DASA scheme</option>
+                            </select>
+                            <label for="country">Country:
+                            </label>
+                            <input type="text" id="country" name="country" placeholder="Enter your country name..">
+                            <label for="email">Email Id:</label>
+                            <input type="email" id="email" name="email">
+                            <label for="comment">Message:</label><br><br>
+                            <textarea name="comment"></textarea><br><br>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Clear">
+
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+
+            <embed
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.9810178068833!2d77.1186109!3d28.7499837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01273846edf5%3A0x6c357f135c711e0f!2sMechanical%20Engineering%20Department!5e0!3m2!1sen!2snp!4v1660844226413!5m2!1sen!2snp"
+                width="650" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></embed>
+        </div>
+    </div>
+    </div>
+
+    <div class="address">
+        Address:
+        <br>
+        Office of International Affairs<br>
+        Mechanical Engineering Block<br>
+        Delhi Technological University<br>
+        Shahbad Daulatpur, Bawana Road, Delhi - 110042<br>
+        <br>
+        <a href="mailto:oia.dtu@dtu.ac.in">oia.dtu@dtu.ac.in</a><br>
+        <a href="mailto:ointernational.dtu@dtu.ac.in">international.dtu@dtu.ac.in</a><br>
+
+    </div>
+    <div class="copyright">
+        Designed and Developed by Aniket Raj Jha.
+        <pre style="font-size:medium;">DELHI TECHNOLOGICAL UNIVERSITY.</pre>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
